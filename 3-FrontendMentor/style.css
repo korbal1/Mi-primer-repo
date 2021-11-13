@@ -1,0 +1,85 @@
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --Blue: hsl(228, 45%, 44%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--Violet);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+}
+
+.header {
+    margin: 32px 8px;
+}
+
+.img__logo img {
+    width: 130px;
+    margin-left: 1.5rem;
+}
+
+.image img {
+    width: 300px;
+    margin-top: 21px;
+    margin-left: 2.4rem;
+}
+
+.tittle {
+    margin: 60px 30px 20px;
+    text-align: center;
+    line-height: 38px;
+    font-family: Poppins, serif;
+    color: white;
+
+}
+
+.description {
+    margin: 10px 30px 10px;
+    text-align: center;
+    line-height: 25px;
+    font-family: 'Open Sans', serif;
+    font-weight: lighter;
+    color: white;
+}
+
+.button {
+    display: flex   ;
+}
+
+.btn {
+    margin: 10px auto;
+    padding: 8px 70px;
+    font-family: Poppins, serif;
+    background-color: white;
+    color: var(--Violet);
+    border-radius: 25px;
+    border-style: unset;
+    box-shadow: 0px 4px 8px rgba(65, 59, 59, 0.432);
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 20px;
+}
+
+.contact img {
+    width: 30px;
+    margin: 0 4px;
+    filter: invert();
+}

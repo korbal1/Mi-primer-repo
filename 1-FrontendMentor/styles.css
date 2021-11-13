@@ -1,0 +1,116 @@
+:root {
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --main-slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --stats-slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+}
+
+.card-container {
+    margin: 50px auto 30px;
+    width: 375px;
+    height: 956px;
+
+    border-radius: 8px;
+    overflow: hidden;    
+    background-color: var(--dark-desaturated-blue);
+    color: var(--white);
+}
+
+.image {
+    position: relative;
+    height: 275px;
+
+    background-color: var(--soft-violet);
+}
+
+.image-desktop {
+    display: none;
+}
+
+.image img {
+    width: 100%;
+    height: 275px;
+    mix-blend-mode: multiply;
+}
+
+.color-image { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 275px;
+    background-color: var(--soft-violet);
+    opacity: 0.25;
+}
+
+
+.text-container {
+    text-align: center;
+}
+
+span {
+    color: var(--soft-violet);
+}
+
+h1 {
+    margin: 2.5rem 2.5rem 1rem;
+}
+
+.text {
+    margin: 1.5rem 3rem 1.5rem;
+    font-family: "Inter";
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: var(--main-slightly-transparent-white);
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats {
+    text-align: center;
+    margin: 2rem;
+}
+
+.stats-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.stats-description {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    color: var(--stats-slightly-transparent-white);
+    letter-spacing: 2px;
+} 
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--white);
+}
+  .attribution a {
+    color: var(--soft-violet) ;
+}

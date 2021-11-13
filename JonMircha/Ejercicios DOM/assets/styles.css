@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+img {
+  width: 50px;
+}
+
+/* nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: yellow;
+}
+
+#Sections-on {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.514);
+} */
+
