@@ -9,6 +9,11 @@ html {
   font-family: sans-serif;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
 img {
   width: 50px;
 }
