@@ -30,13 +30,12 @@ img {
 }
 
 .menu { 
-  border: solid 2px red;
   height: 100vh;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
-  background-color: rgba(82, 76, 76, 0.521);
+  background-color: rgba(145, 72, 72, 0.521);
 }
 
 .menu-container ul {
