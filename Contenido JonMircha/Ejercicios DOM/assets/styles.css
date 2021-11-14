@@ -10,24 +10,45 @@ html {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-}
-
-img {
-  width: 50px;
-}
-
-/* nav {
+  height: 3.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: yellow;
 }
 
-#Sections-on {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.514);
-} */
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+}
 
+img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+}
+
+.menu { 
+  border: solid 2px red;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  background-color: rgba(82, 76, 76, 0.521);
+}
+
+.menu-container ul {
+  padding: 0;
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+.menu a {
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+}
