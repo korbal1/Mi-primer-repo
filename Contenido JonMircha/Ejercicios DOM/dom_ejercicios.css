@@ -67,8 +67,8 @@ img {
   width: 100%;
   background-color: var(--second-modal-color);
   transition: transform 0.5s ease;
-  /*** De arriba ***/
-  transform: translate(0,-100%);
+  /*** Desde costado izquierdo ***/
+  transform: translate(-100%,0);
 }
 
 .panel.is-active {
@@ -79,7 +79,7 @@ img {
 position: fixed;
 z-index: 999;
 bottom: 1vh;
-right: 1vw;
+left: 1vw;
 width: 4rem;
 height: 4rem;
 border-radius: 50%;
