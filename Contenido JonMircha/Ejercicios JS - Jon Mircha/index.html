@@ -1,13 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/style.css"
+    />
     <title>Ejercicios de Lógica de Programación #jonmircha</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>Ejercicios de Lógica de Programación en Javascript</h1>
+
+    <h2>Lista de Ejercicios</h2>
+    <ol>
+      <li>
+        Programa una función que cuente el número de caracteres de una cadena de
+        texto, pe. miFuncion("Hola Mundo") devolverá 10.
+      </li>
+
+      <pre class="codigo"><br>
+        const contarCaracteres = (cadena = "") =>
+         !cadena
+            ? console.warn("No ingresaste ninguna cadena")
+            : console.info(`La cadena "${cadena}" tiene ${cadena.length} caracteres.`);
+
+            contarCaracteres("Hola Mundo");<br>
+            </pre>
+
+      <li>
+        Programa una función que te devuelva el texto recortado según el número
+        de caracteres indicados, pe. miFuncion("Hola Mundo", 4) devolverá
+        "Hola".
+      </li>
+
+      <pre class="codigo"><br>
+        const recortar = (cadena = "", longitud = undefined) =>
+        !cadena
+          ? console.warn("No hay texto que recortar")
+          : console.info(cadena.slice(0, longitud));
+      recortar("Hola Mundo", 4);<br>
+    </pre>
+
+      <li>
+        Programa una función que dada una String te devuelva un Array de textos
+        separados por cierto caracter, pe. miFuncion('hola que tal', ' ')
+        devolverá ['hola', 'que', 'tal'].
+      </li>
+
+      <pre class="codigo"><br>
+        const stringToArray = (cadena = "", separador = undefined) =>
+        !cadena
+          ? console.warn("No hay texto que recortar")
+          : separador === undefined
+          ? console.warn("No has indicado un parámetro de separación de la cadena")
+          : console.info(cadena.split(separador));
+      
+      stringToArray("Hola que tal", " ");<br>
+      </pre>
+
+      <li>
+        Programa una función que repita un texto X veces, pe. miFuncion('Hola
+        Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.
+      </li>
+
+      <pre class="codigo"><br>
+        const repetirTexto = (texto = "", veces = undefined) => {
+        if (!texto) return console.warn("No ingresaste un texto");
+      
+        if (veces === undefined)
+          return console.warn("No has indicado la cantidad de veces");
+      
+        if (veces === 0) return console.error("El número de veces no puede ser cero");
+      
+      
+        if (Math.sign(veces) === -1)
+          return console.error(
+            "La cantidad de veces a reptir el texto no puede ser indicada con un número negativo"
+          );
+      
+        console.log(`${texto} `.repeat(veces));
+      };
+      
+      repetirTexto();
+      repetirTexto("Hola Mundo!");
+      repetirTexto("Hola Mundo!", 0);
+      repetirTexto("Hola Mundo!", -4);
+      repetirTexto("Hola Mundo!", 3);<br>
+    </pre>
+
+      <li>
+        Programa una función que invierta las palabras de una cadena de texto,
+        pe. miFuncion("Hola Mundo") devolverá "odnuM aloH".
+      </li>
+
+      <pre class="codigo"><br>
+        const textoInvertido = (texto) => {
+        !texto
+          ? console.warn("No has ingresado un texto a invertir")
+          : console.info(texto.split("").reverse().join(""));
+      };
+      textoInvertido("Hola Mundo!");<br>
+    </pre>
+
+      <li>
+        Programa una función para contar el número de veces que se repite una
+        palabra en un texto largo, pe. miFuncion("hola mundo adios mundo",
+        "mundo") devolverá 2.
+      </li>
+
+      <pre class="codigo"><br>
+        const contadorPalabra = (cadena = "", palabra = "") => {
+          if (!cadena)
+            return console.warn("No has ingresado un texto sobre el que buscar");
+          if (!palabra === undefined)
+            return console.warn("No has ingresado una palabra a buscar");
+        
+            let i = 0,
+            contador = 0;
+        
+            while (i!==-1){
+              i = cadena.indexOf(palabra, i);
+              if(i!==-1) {
+                i++;
+                contador++;
+              }
+            }
+            return console.info(`La palabra ${palabra} se repite ${contador} veces en el texto ingresado`);
+        };
+        
+        contadorPalabra("Hola mundo, adiós mundo. Me voy de este mundo", "mundo");<br>
+      </pre>
+
+      <li>Programa una función que valide si una palabra o frase dada, es un palíndromo (que se lee igual en un sentido que en otro), pe. mifuncion("Salas") devolverá true.</li>
+
+      <pre class="codigo"><br>
+        const esPalindromo = (palabra = "") => {
+          if (!palabra)
+            return console.error("No has ingresado una palabra para comprobar si es palíndromo");
+            
+            let reverse = palabra.split("").reverse().join("");
+        
+            reverse === palabra
+            ? console.info(`Sí, la palabra "${palabra}" es un palíndromo`)
+            : console.info(`No, la palabra "${palabra}" no es un palíndromo`);
+        }
+        
+        esPalindromo("");
+        esPalindromo("neuquen");
+        esPalindromo("salas");
+        esPalindromo("airbag");
+        esPalindromo("ratar");
+      </pre>
+
+      <li></li>
+
+      <li></li>
+
+      <li></li>
+    </ol>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
