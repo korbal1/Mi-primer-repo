@@ -1,0 +1,91 @@
+{
+  "familia": [
+    {
+      "id": 1,
+      "nombre": "Gabriel Amaru",
+      "edad": 4
+    },
+    {
+      "id": 2,
+      "nombre": "Mónica Elisa",
+      "edad": 59
+    },
+    {
+      "id": 3,
+      "nombre": "Ángel Roberto",
+      "edad": 64
+    },
+    {
+      "id": 4,
+      "nombre": "Roberto Ezequiel",
+      "edad": 37
+    },
+    {
+      "id": 5,
+      "nombre": "Flavia Luciana",
+      "edad": 31
+    },
+    {
+      "id": 6,
+      "nombre": "Dante Alejo",
+      "edad": 10
+    },
+    {
+      "id": 7,
+      "nombre": "Azul Ailén",
+      "edad": 5
+    },
+    {
+      "id": 8,
+      "nombre": "Pilar",
+      "edad": 3
+    },
+    {
+      "nombre": "María Alejandra",
+      "edad": "42",
+      "id": 9
+    }
+  ],
+  "equipos": [
+    {
+      "país": "Argentina",
+      "club": "Club Atlético Huracán",
+      "id": 1
+    },
+    {
+      "país": "España",
+      "club": "Deportivo Espanyol",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "país": "Brasil",
+      "club": "Botafogo"
+    },
+    {
+      "id": 4,
+      "país": "Francia",
+      "club": "Bordeaux"
+    },
+    {
+      "país": "Chile",
+      "club": "Audax",
+      "id": 5
+    },
+    {
+      "país": "Ecuador ",
+      "club": "Liga",
+      "id": 6
+    },
+    {
+      "país": "Colombia",
+      "club": "Deportivo Pasto",
+      "id": 7
+    },
+    {
+      "país": "Perú",
+      "club": "Universitario",
+      "id": 9
+    }
+  ]
+}
