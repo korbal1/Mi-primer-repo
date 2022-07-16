@@ -1,43 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 
-    <title>Frontend Mentor | FAQ Accordion Card</title>
-  </head>
-  <body>
-    <div class="card-container">
-      <div class="card">
-        <h1>FAQ</h1>
-        <a id="question" href="">How many team members can I invite?</a>
-        <p id="answer">
-          You can invite up to 2 additional users on the Free plan. There is no
-          limit on team members for the Premium plan.
-        </p>
-      </div>
-    </div>
+		<title>Frontend Mentor | FAQ Accordion Card</title>
+	</head>
+	<body>
+		<div class="card-container">
+			<div class="card">
+				<h1>FAQ</h1>
+				<div class="faq-item">
+					<a id="frequent-question" href=""
+						>How many team members can I invite?</a
+					>
+					<p id="answer" class="hidden">
+						You can invite up to 2 additional users on the Free plan. There is
+						no limit on team members for the Premium plan.
+					</p>
+				</div>
+				<div class="faq-item">
+					<a id="frequent-question" href=""
+						>What is the maximum file upload size?</a
+					>
+					<p id="answer" class="hidden">
+						No more than 2GB. All files in your account must fit your allocatted
+						storage space.
+					</p>
+				</div>
+				<div class="faq-item">
+					<a id="frequent-question" href="">How do I reset my password?</a>
+					<p id="answer" class="hidden">
+						You can invite up to 2 additional users on the Free plan. There is
+						no limit on team members for the Premium plan.
+					</p>
+				</div>
+				<div class="faq-item">
+					<a id="frequent-question" href="">Can I cancel my subscription?</a>
+					<p id="answer" class="hidden">
+						You can invite up to 2 additional users on the Free plan. There is
+						no limit on team members for the Premium plan.
+					</p>
+				</div>
+				<div class="faq-item">
+					<a id="frequent-question" href=""
+						>Do you provide additional support?</a
+					>
+					<p id="answer" class="hidden">
+						You can invite up to 2 additional users on the Free plan. There is
+						no limit on team members for the Premium plan.
+					</p>
+				</div>
+			</div>
+		</div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
-  </body>
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div>
+	</body>
 </html>

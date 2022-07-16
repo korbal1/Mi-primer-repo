@@ -1,0 +1,6 @@
+{
+  "errorLens.exclude": [
+    "never (read|used)",
+  ],
+  "errorLens.fontSize": "10px"
+}

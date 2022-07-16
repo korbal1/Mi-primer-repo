@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Selects Anidados</title>
+		<style>
+			html {
+				font-family: sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Ejercicio de Selectores Anidados</h1>
+		<h2>Chile</h2>
+		<form>
+			<select name="region" id="regiones">
+				<option value="elige">Elige una Región</option>
+			</select>
+			<p></p>
+			<select name="provincia" id="provincias">
+				<option value="elige">Elige una Provincia</option>
+			</select>
+			<p></p>
+			<select name="comuna" id="comunas">
+				<option value="elige">Elige una Comuna</option>
+			</select>
+			<p></p>
+		</form>
+		<script>
+			const d = document;
+			$regiones = d.getElementById("regiones");
+			$provincias = d.getElementById("provincias");
+			$comunas = d.getElementById("comunas");
+
+			function loadRegiones() {
+				fetch("https://apis.digital.gob.cl/dpa/regiones")
+					.then((res) => (res.ok ? res.json() : Promise.reject(res)))
+					.then((json) => {
+						console.log(json);
+					})
+					.catch((err) => {
+						console.log(err);
+						let message = err.statusText || "Ocurrió un error";
+						$regiones.nextElementSibling.innerHTML = `Error ${err.status}: ${message}`;
+					});
+			}
+
+			function loadProvincias(region) {}
+
+			function loadComunas(region, provincia) {}
+
+			d.addEventListener("DOMContentLoaded", (e) => loadRegiones);
+			$regiones = d.addEventListener("change", (e) =>
+				loadProvincias(e.target.value)
+			);
+		</script>
+	</body>
+</html>
